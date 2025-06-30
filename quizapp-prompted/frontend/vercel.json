@@ -1,0 +1,16 @@
+{
+  "routes": [
+    {
+      "src": "/api",
+      "headers": {
+        "Content-Security-Policy": "default-src 'self' https:; connect-src 'self' https://domain.example/"
+      }
+    },
+    {
+      "src": "/api/*",
+      "headers": {
+        "Content-Security-Policy": "default-src 'self' https:; connect-src 'self' https://domain.example/"
+      }
+    }
+  ]
+}
